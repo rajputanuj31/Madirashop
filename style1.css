@@ -61,18 +61,40 @@ body {
 }
 
 .btn {
-    font-size: 13px;
-    padding: 4px 8px;
-    border-radius: 14px;
-    width: 100px;
+    font-size: 15px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    width: 120px;
+    border: none;
+    margin: 5px;  
+    background: rgb(192, 252, 255);
+    transition: 1s;
 }
 
 .btn:hover {
-    background-color: rgb(228, 104, 104);
-    text-decoration-line: underline;
+    background-color: rgb(240, 158, 249);
+    box-shadow: 0 0 10px rgb(160, 250, 255);
+    font-size: 16px;
     cursor: pointer;
+    animation: swing 0.25s ease-out ;
 }
-
+@keyframes swing{
+    0%{
+         transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .box {
     display: flex;
     flex-direction: column;
